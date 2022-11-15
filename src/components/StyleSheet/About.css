@@ -1,0 +1,29 @@
+.about-container p{
+    font-size: large;
+}
+
+.about-container {
+    background-color: #fff;
+    width: 800px;
+    padding: 64px 0px 112px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.about-container .section-heading {
+    font-weight: 400;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: black;
+}
+
+.about-container .section-sub-heading {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 10px 0;
+    font-style: italic;
+    opacity: 0.6;
+}

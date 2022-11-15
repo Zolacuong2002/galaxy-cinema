@@ -1,0 +1,14 @@
+.heading{
+    top: 20%;
+    padding: 30px;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: rgb(220, 224, 232);
+    background-color: black;
+    
+}
+.for-container{
+    background-color:rgb(220, 224, 232);
+}

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+.footer-contain{
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 100px ;
+}
+
+h1{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom:10px;
+    margin-top: 40px;
+}
+
+li{
+    color: #ffffff;
+    margin-top: auto;
+}
+
+.info{
+    color: #ffffff;
+    text-align: center;
+}
+

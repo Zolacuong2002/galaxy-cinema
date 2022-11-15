@@ -1,0 +1,35 @@
+.slider-contain img{
+    height: 900px;
+    max-width: 100%;
+}
+
+.carousel{
+    height: -390px;
+    /* margin: auto; */   
+}
+
+.carousel-control-prev{
+    bottom: -120px;
+}
+
+.carousel-control-next{
+    bottom: -120px;
+}
+
+.carousel .carousel-control-prev-icon{
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-prev-icon{
+    visibility: visible;
+}
+
+.carousel .carousel-control-next-icon{
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-next-icon{
+    visibility: visible;
+}
+
+

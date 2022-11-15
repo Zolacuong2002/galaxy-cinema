@@ -1,0 +1,101 @@
+.container{
+    padding: 15px 0;
+    background-color: #ffffff;
+    border: 0;
+}
+/* .row{
+    margin-left: auto;
+    margin-right: auto;
+
+} */
+
+.movie-item {
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 0 30px;
+    position: relative;
+}
+
+div{
+    vertical-align: baseline;
+}
+
+.movie-img{
+    max-width: 300px;
+    max-height: 450px;
+}
+
+.Film-Item .movie-img:hover{
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms;
+    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Film-Item .movie-content{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    height:200px;
+    width: 100%;
+}
+
+/* btn-detail */
+.btn-detail, .btn-buy-ticket{
+    text-transform: uppercase;
+    background-color: #f26b38;
+    color: #ffffff;
+    display: none;
+}
+
+.movie-container:hover .btn-detail{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    color: #ffffff;
+    display: block;
+}
+
+.btn-detail:hover{
+    background-color: #a7421d;
+}
+
+/* btn-buy-ticket */
+.movie-container:hover .btn-buy-ticket{
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    width: 50;
+    color: #ffffff;
+    display: block;
+}
+
+.btn-buy-ticket:hover{
+    background-color: #a7421d;
+}
+
+.title-movie h4{
+    width: 300px;
+    display: block;
+    color: #43464b;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
+.title-movie .name{
+    font-size: 14px;
+}
+.title-movie .sub-name{
+    color: #a0a3a7;
+}
+.title-movie .sub-name:empty{
+  height: 20px;
+}
+

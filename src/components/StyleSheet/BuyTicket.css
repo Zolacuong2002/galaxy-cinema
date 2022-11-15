@@ -1,0 +1,107 @@
+.modal-ticket {
+    /*  */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0 ;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.modal-ticket.open {
+    display: flex;
+}
+
+.modal-container-ticket {
+   background-color: #fff;
+   position: relative;
+   animation: modalFadeIn ease .5s ;
+}
+
+.modal-container-ticket .modal-close {
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-container-ticket .modal-close:hover {
+    opacity: 1;
+    background-color: #f44336;
+}
+
+.modal-heading {
+    background-color: #009688;
+    width: 900px;
+    height: 129px;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal-body {
+    padding: 0 16px;
+}
+
+.modal-icon {
+    margin-right: 16px;
+}
+
+.modal-label{
+    display: block;
+    margin: 15px 0px;
+    float: left;
+}
+
+.modal-input {
+    border: solid 1px #ccc;
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-pay {
+    border: none;
+    background-color: #009688;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 16px;
+    margin: 16px 0px;
+}
+
+.modal-pay:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.modal-footer {
+    padding: 16px;
+    float: right;
+}
+
+.modal-footer a{
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform:translateY(-170px);
+        opacity: 0;
+    }
+    to {
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}

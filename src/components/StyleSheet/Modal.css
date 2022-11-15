@@ -1,0 +1,128 @@
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:0 ;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.modal-container{
+    background-color: black;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 200px;
+    padding: 10px 10px;
+    margin: 10px 20px;
+    animation: modalFadeIn ease .5s ;
+    position: relative;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform:translateY(-170px);
+        opacity: 0;
+    }
+    to {
+        transform:translateY(0px);
+        opacity: 1;
+    }
+}
+/* img */
+.modal-container .movie-img{
+  float: left;
+}
+
+/* title */
+.modal-container .title-movie h1{
+    width: 450px;
+    display: block;
+    color: #ffffff;
+    font-size: 25px;
+    padding-left: 20px;
+    line-height: 30px;
+    margin: 10px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.modal-container .title-movie .sub-name{
+    color: rgb(153, 141, 124);
+}
+.modal-container .title-movie .sub-name:empty{
+  height: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Rating */
+.modal-container .rating-movie{
+    color: #ffffff;
+    margin: 10px 300px;
+    font-size: 20px;
+}
+.rating-movie .rate-click{
+    font-size: 18px;
+    color: #ffffff;
+    padding: 5px 5px;
+    margin: 10px 10px ;
+    border: none;
+    border-radius: 5px; 
+    background-color:rgb(252, 111, 3);
+}
+.rating-movie .rate-click:hover{
+    color: rgb(153, 141, 124);
+    background-color: #ffffff;;
+    cursor: pointer;
+}
+
+/* Duration */
+.duration-movie{
+    color: #ffffff;
+    margin: 10px 300px;
+}
+
+.duration-movie .dur{
+   font-size: 20px;
+}
+
+
+/* age limit */
+.age-limited{
+    border-radius: 5px; 
+    margin: 26px 300px;
+}
+
+.age-limited span{
+    padding: 5px 5px;
+    margin: 10px 10px ;
+    border-radius: 5px;
+    background-color:rgb(237, 86, 59);
+    color: #ffffff;
+}
+
+/* Close Modal */
+.close-modal-btn{
+    position: absolute;
+    color: #fff;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgb(209, 53, 25);
+}
+
+.close-modal-btn:hover{
+    opacity: 1;
+    background-color: #f44336;
+}
+
+.descrip-movie{
+    color:#ffffff;
+}
