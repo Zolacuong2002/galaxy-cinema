@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/galaxy-cinema/static/css/main.d5bb6e49.css",
+    "main.js": "/galaxy-cinema/static/js/main.47b1d50e.js",
+    "static/js/787.e253fc0a.chunk.js": "/galaxy-cinema/static/js/787.e253fc0a.chunk.js",
+    "static/media/logo.png": "/galaxy-cinema/static/media/logo.db952643acbbd126409d.png",
+    "index.html": "/galaxy-cinema/index.html",
+    "main.d5bb6e49.css.map": "/galaxy-cinema/static/css/main.d5bb6e49.css.map",
+    "main.47b1d50e.js.map": "/galaxy-cinema/static/js/main.47b1d50e.js.map",
+    "787.e253fc0a.chunk.js.map": "/galaxy-cinema/static/js/787.e253fc0a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5bb6e49.css",
+    "static/js/main.47b1d50e.js"
+  ]
+}
