@@ -1,4 +1,6 @@
-import React,{useState} from 'react';
+import React, {useEffect,useState} from "react";
+import {auth,provider} from "./config"
+import { signInWithPopup } from 'firebase/auth';
 import {NavLink, Link} from 'react-router-dom';
 import {FiAlignRight,FiXCircle,FiChevronDown } from "react-icons/fi";
 import logo from '../../../img/logo.png';
@@ -31,6 +33,23 @@ function NavBar(){
     }else {
         boxClassSubMenu.push('');
     }
+
+    const [value,setValue] = useState('')
+      const LogIn =()=>{
+        signInWithPopup(auth,provider).then((data) =>{
+          setValue(data.user.email)
+          localStorage.setItem("name",data.user.displayName)
+        })
+    }
+
+        useEffect(()=>{
+            setValue(localStorage.getItem('name'))
+          })
+
+          const LogOut =() =>{
+            localStorage.clear()    
+            window.location.reload()    
+        }
 
     return (
         <div className="header__middle">
@@ -68,9 +87,17 @@ function NavBar(){
                             </li>
                             <li className="menu-item " ><NavLink onClick={toggleClass}  to={`/Contact`}> Contact </NavLink> </li>
                             <li className='sign-in-box'>
-                                <a href="/" className='sign-in'>
-                                    <i className="bi bi-person-fill"></i> Đăng nhập
+                            {localStorage.getItem("name") ? (
+                                <a href="#" className='sign-in' onClick={LogOut}>
+                                    <h4>Hi  {localStorage.getItem("name") }</h4>
+                                    
+                                     <i className="bi bi-person-fill" > Logout</i> 
+                                </a>
+                            ):( 
+                                <a href="#" className='sign-in' onClick={LogIn}>     
+                                         <i className="bi bi-person-fill" > LogIn</i> 
                                 </a> 
+                            )}
                             </li>
                             </ul>
                         </div> 

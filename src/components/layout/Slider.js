@@ -3,32 +3,39 @@ import '../StyleSheet/Slider.css';
 import {Carousel} from 'react-bootstrap';
 import ReactPlayer from "react-player";
 
+import { useState } from "react";
+
+    // Getting API
+
 function Slider(){
+
+    var API = 'https://www.galaxycine.vn/api/movie/showAndComming?';
+
+    // Use 'useState' hook to get data
+    const [films, setFilms] =  useState(() => {
+        fetch(API)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){  
+            return setFilms(data.movieShowing);
+        })
+        .catch(function(err){
+            console.log(err);
+        });
+    });
+
+    var videoProp = [];
+    films?.map(film =>{
+        videoProp.push({id: film.id, src: film.trailer, credit: ""} );
+    });
+
+
     const imageProp=[
         {
             id:1,
             src:"https://www.galaxycine.vn/media/2022/5/9/promotion-duatop2022-digital-2048x682_1652081734177.jpg",
         }
-    ]
-    const videoProp = [
-        {
-            id:1,
-            src: "https://www.youtube.com/watch?v=Rf8LAYJSOL8",
-            credit:"Lạ đại phu 2",
-        },
-
-        {
-            id:2,           
-            src: "https://www.youtube.com/watch?v=mJ_Q9f0Am9s",
-            credit:"Chuyện ma đô thị",
-        },
-
-        {
-            id:3,            
-            src: "https://www.youtube.com/watch?v=AlYDgL3S95Y&t=2s",
-            credit:"Nghề siêu dễ",
-        },
-
     ]
 
     return(
